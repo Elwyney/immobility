@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import socket from '@/app/socket';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect, useRef } from "react";
@@ -79,8 +79,8 @@ const Chat = () => {
                 <div className="container">
                     <div className="chat">
                         <div>
-                            <a href="">Завершить чат</a>
-                            <a href="">Пожаловаться</a>
+                            <a href="" className='chat-end'  >Завершить чат</a>
+                            <a href="" className='report' >Пожаловаться</a>
                         </div>
                         <div className="set-message">
                             <audio ref={audioRef}>
@@ -131,3 +131,6 @@ const Chat = () => {
     )
 }
 export default Chat;
+
+
+
