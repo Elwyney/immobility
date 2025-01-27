@@ -12,4 +12,4 @@ const removeUserFromRoom = (info, name, io, id) => {
         }
     });
 };
-export default removeUserFromRoom;
+module.export = removeUserFromRoom;
